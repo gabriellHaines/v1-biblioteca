@@ -24,14 +24,14 @@
                 $_SESSION['usu_nome'] = $usu_nome;
                 $_SESSION['usu_id'] = $usu_id;
                 $_SESSION['usu_tipo'] = $usu_tipo;
-                if ($usu_tipo == 'admin') {
-                    header('location:./logado/admin/index.php');    
-                }elseif ($usu_tipo == 'autor') {
-                    header('location:./logado/autor/index.php');    
-                }else if ($usu_tipo == 'usuario') {
+                if ($usu_tipo == 'usuario') {
                     header('location:./logado/usuario/index.php');
-                }
-            } else {
+                }else if ($usu_tipo == 'autor') {
+                    header('location:./logado/autor/index.php');    
+                }else if ($usu_tipo == 'funcionario') {
+                    header('location:./logado/funcionario/index.php');
+                }    
+                } else {
                 echo "Senha Incorreta";
             }
         }else{

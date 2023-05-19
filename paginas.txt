@@ -1,0 +1,90 @@
+v1-Biblioteca{
+
+    banco{
+
+        bUsuario.php
+        bAtor.php
+        bLivro.php
+
+    }
+
+    logado{
+        
+        funcionario{
+            
+            php{
+                
+                cadAutor.php
+                excluirConta.php
+                recuperarConta.php
+                conexao.php --OK
+                editarDados.php
+                pesquisaLivro.php
+                pesquisaAutor.php
+                cadLivro.php
+
+            }
+            
+            cadAutor.php
+            excluirConta.php
+            recuperarConta.php
+            cadLivro.php
+            editarDados.php
+            pesquisaLivro.php
+            pesquisaAutor.php
+            index.php
+
+        }
+
+        cliente{
+            
+            php{
+
+                conexao.php --OK
+                editarDados.php
+                pesquisaLivro.php
+                pesquisaAutor.php
+            
+            }
+
+            editarDados.php
+            pesquisaLivro.php
+            pesquisaAutor.php
+            index.php
+        
+        }
+
+        autor{
+
+            php{
+
+                cadLivro.php
+                editarDados.php
+                pesquisaLivro.php
+                pesquisaAutor.php
+                conexao.php --OK
+
+            }
+
+            cadLivro.php
+            editarDados.php
+            pesquisaLivro.php
+            pesquisaAutor.php
+            index.php
+
+        }
+    
+    }
+    
+    php{
+
+        cadUsuario.php --OK
+        conexao.php --OK
+        login.php --OK
+    
+    }
+    
+    index.php(login/pagina inicial) --OK
+    cadUsuario.php --OK
+
+}

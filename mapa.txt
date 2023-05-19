@@ -1,11 +1,22 @@
-biblioteca 
-    ussuário{
-        padrão
-        funcionario
-        autor
-    }
 
-pesquisa de livros
-cada livro estara associador a um autor 
-apenas funcionario podem cadastrar autores
-livros podem ser cadastrado pelo auto ou então um funcionario
+1-tela inicial -login
+
+2-cadastro de usuários
+    obs: tipo funcionário/cliente(padrão)
+
+3-Cadastro de livro
+    obs: cadastro feito apenas por funcionarios
+
+4-Cadastro de livro
+    obs: cadastro feito apenas por funcionarios
+
+5-Busca de Livro por livro, nome do autor e editora
+
+
+
+⬢ Apenas o usuário do tipo funcionário poderá cadastrar,
+alterar ou apagar uma obra e/ou um autor;
+⬢ Na página principal, crie um formulário para criar, atualizar
+e excluir registros da tabela "usuarios". Use o método POST
+para enviar os dados do formulário. Verifique se o usuário
+tem permissão para executar as ações.
