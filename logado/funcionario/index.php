@@ -15,7 +15,7 @@
             $id = $_SESSION['usu_id'];
             $tipo = $_SESSION['usu_tipo'];
             echo "nome: " . $nome . ' usuário: ' . $usuario . ' id: '. $id.' tipo: ' . $tipo;
-            if (!empty($id)) {
+            if (empty($id)) {
                 header('location:../../index.php');
             }else if ($tipo !== "funcionario") {
                 session_unset();
@@ -30,7 +30,6 @@
         <button name = 'cadAutor'>Cadastrar Autor</button>
         <button>Cadastrar Livro</button>
     </form>
-            cadAutor.php
             excluirConta.php
             recuperarConta.php
             cadLivro.php
@@ -48,6 +47,10 @@
         
         if (isset($_POST["cadAutor"])) {
             header("location:./cadAutor.php");
+        }
+        
+        if (isset($_POST["cadLivro"])) {
+            header("location:./cadLivro.php")
         }
     ?>
 </body>

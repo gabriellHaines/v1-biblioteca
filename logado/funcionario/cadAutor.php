@@ -9,28 +9,37 @@
 <body>
     <h1>Cadastro de Autor</h1>
     <form method = "post">
-    <label for="usuario">Digite seu Usuário: </label><br>
+    <label for="usuario">Digite o Usuário: </label><br>
         <input type="text" name='usuario'><br>
-        <label for="senha">Digite sua Senha: </label><br>
+        <label for="senha">Digite a Senha: </label><br>
         <input type="password" name='senha'><br>
-        <label for="senhaR">Repita sua Senha: </label><br>
+        <label for="senhaR">Repita a Senha: </label><br>
         <input type="password" name='senhaR'><br>
-        <label for="nome">Digite seu Nome: </label><br>
+        <label for="nome">Digite o Nome: </label><br>
         <input type="text" name='nome'><br>
-        <label for="celular">Digite seu Celular: </label><br>
+        <label for="celular">Digite o Celular: </label><br>
         <input type="text" name='celular'><br>
-        <label for="data_nascimento">Digite sua Data de Nascimento: </label><br>
+        <label for="data_nascimento">Digite a Data de Nascimento: </label><br>
         <input type="text" name='data_nascimento'><br>
-        <label for="cpf">Digite seu CPF: </label><br>
+        <label for="cpf">Digite o CPF: </label><br>
         <input type="text" name='cpf'><br>
-        <label for="endereco">Digite seu Endereço: </label><br>
+        <label for="endereco">Digite o Endereço: </label><br>
         <input type="text" name='endereco'><br>
-        <label for="nascionalidade">Digite sua Nascionalidade: </label><br>
+        <label for="nascionalidade">Digite a Nascionalidade: </label><br>
         <input type="text" name = "nascionalidade"><br>
-        <label for="biografia">Digite sua Biografia: </label><br>
+        <label for="biografia">Digite a Biografia: </label><br>
         <input type="text" name = "biografia"><br>
 
         <button name = "enviar">Cadastrar</button>
+        <button name = "voltar">Voltar</button>
     </form>
+    <?php
+        if (isset($_POST["voltar"])) {
+            header("location:./index.php");
+        }
+        if (isset($_POST["enviar"])) {
+            require_once('./php/cadAutor.php');
+        }
+    ?>
 </body>
 </html>
